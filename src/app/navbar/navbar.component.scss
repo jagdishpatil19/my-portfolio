@@ -1,0 +1,152 @@
+.navbar {
+   background-color: rgb(0, 0, 97);
+   height: 70px;   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   position: -webkit-sticky; /* For Safari */
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   border-bottom: 1px solid white;
+}
+
+.btns ul {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   margin-top: 8px;
+}
+
+li {
+   list-style-type: none;
+}
+
+button {
+   background-color: transparent;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   height: 35px;
+}
+
+button:hover {
+   border: 1px solid rgb(0, 200, 255);
+   color: white;
+   box-shadow: 5px 5px 5px rgb(0, 200, 255);
+}
+
+.navbar-brand {
+   border: 1px solid transparent;
+   color: aqua;
+   height: 40px;
+   width: 130px;
+}
+
+.navbar-brand:hover {
+   height: 40px;
+   width: 130px;
+   border: 1px solid greenyellow;
+   color: rgb(255, 255, 255);
+   border-radius: 10px 0 10px 0;
+   box-shadow: 5px 5px 5px greenyellow;
+}
+
+#navbarSupportedContent {
+   margin-left: 200px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+   .navbar {
+       height: 60px;
+   }
+   .btns ul {
+       gap: 8px;
+       margin-top: 6px;
+   }
+   .navbar-brand {
+       height: 35px;
+       width: 120px;
+   }
+   .navbar-brand:hover {
+       height: 35px;
+       width: 120px;
+   }
+   #navbarSupportedContent {
+       margin-left: 150px;
+   }
+}
+
+@media (max-width: 992px) {
+   .navbar {
+       height: 55px;
+       justify-content: space-between;
+       padding: 0 20px;
+   }
+   .btns ul {
+       flex-direction: column;
+       gap: 5px;
+       margin-top: 0;
+   }
+   .navbar-brand {
+       height: 30px;
+       width: 110px;
+   }
+   .navbar-brand:hover {
+       height: 30px;
+       width: 110px;
+   }
+   #navbarSupportedContent {
+       margin-left: 100px;
+   }
+}
+
+@media (max-width: 768px) {
+   .navbar {
+       height: 50px;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 10px;
+   }
+   .btns ul {
+       flex-direction: column;
+       gap: 5px;
+       margin-top: 10px;
+   }
+   .navbar-brand {
+       height: 25px;
+       width: 100px;
+   }
+   .navbar-brand:hover {
+       height: 25px;
+       width: 100px;
+   }
+   #navbarSupportedContent {
+       margin-left: 50px;
+   }
+}
+
+@media (max-width: 576px) {
+   .navbar {
+       height: auto;
+       padding: 10px;
+   }
+   .btns ul {
+       flex-direction: column;
+       gap: 5px;
+       margin-top: 10px;
+   }
+   .navbar-brand {
+       height: 20px;
+       width: 90px;
+   }
+   .navbar-brand:hover {
+       height: 20px;
+       width: 90px;
+   }
+   #navbarSupportedContent {
+       margin-left: 0;
+   }
+}
