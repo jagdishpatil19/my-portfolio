@@ -37,21 +37,21 @@ export class ProjectComponent {
   }
 
   portFolio(){
- this.p=true
+ this.p=!this.p
   }
   wheatherApp(){
-    this.w=true
+    this.w=!this.w
   }
   hotel(){
-    this.h=true
+    this.h=!this.h
   }
   amazonePage(){
-    this.a=true
+    this.a=!this.a
   }
   loginpage(){
-    this.l=true
+    this.l=!this.l
   }
   youtubePage(){
-    this.y=true
+    this.y=!this.y
   }
 }
